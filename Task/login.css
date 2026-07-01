@@ -1,0 +1,92 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+.outer{
+    height: 100vh;
+    display:flex ;
+}
+.outer > .left{
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.outer > .right{
+    flex-basis: 55%;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.left > img{
+    height: 60%;
+}
+.right > form{
+    width: 350px;
+    background-color: white;
+    color: black;
+    border-radius :10px;
+    padding: 15px 25px ;
+
+}
+form > input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid gray;
+}
+form > label{
+    display: block;
+    font-size:20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    /* margin-bottom: 10px; */
+
+}
+form > button{
+   
+    width: 100%;
+    border-radius: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease-in;
+    color: yellowgreen;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    cursor: pointer;
+}
+.right > footer{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+footer > p{
+    font-size: 20px;
+    text-transform: capitalize;
+   
+}
+footer > a{
+    font-size: 20px;
+    color:beige ;
+    text-decoration: none;
+}
+.right > h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin bottom: 35px;
+}
+form > button:hover{
+    color: aqua;
+}
