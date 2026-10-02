@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* ================= NAVBAR ================= */
+nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  background-color: darkslateblue;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Right side of navbar */
+nav > .right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Username */
+.right > h3 {
+  color: #ccc;
+  font-size: 18px;
+}
+
+/* Logout button */
+.right > button {
+  padding: 7px 15px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  background-color: rgb(246, 100, 100);
+  cursor: pointer;
+  letter-spacing: 1.3px;
+  transition: 0.3s;
+}
+
+.right > button:hover {
+  background-color: rgb(255, 70, 70);
+  transform: scale(1.05);
+}
+
+/* ================= MAIN ================= */
+main {
+  min-height: calc(100vh - 100px);
+  background-color: #f4f4f4;
+  padding: 30px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+/* ================= CARD ================= */
+
+main > .card {
+  height: 300px;
+  width: 350px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: 0.4s;
+}
+
+main > .card:hover {
+  transform: scale(1.04);
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* ================= PRODUCT NAME ================= */
+
+.card > p:nth-child(2) {
+  font-weight: bold;
+  letter-spacing: 1.3px;
+  text-align: center;
+  font-size: 19px;
+}
+
+/* ================= PRICE ================= */
+
+.card > p:nth-child(3) {
+  font-weight: bold;
+  color: rgb(83, 83, 235);
+  font-size: 18px;
+}
+
+/* ================= IMAGE ================= */
+
+.card > img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
+
+/* ================= CARD BUTTON ================= */
+
+.card > button {
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(105, 251, 105);
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.card > button:hover {
+  background-color: greenyellow;
+  transform: scale(1.05);
+}
+
+/* ================= EARNING CURVE ================= */
+
+.earning-curve {
+  width: 100%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+}
+
+.earning-curve > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: darkslateblue;
+  text-transform: capitalize;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  nav {
+    height: 80px;
+    padding: 0 20px;
+  }
+
+  nav > .right {
+    gap: 10px;
+  }
+
+  .right > h3 {
+    font-size: 14px;
+  }
+
+  .right > button {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  main {
+    justify-content: center;
+    padding: 25px 15px;
+  }
+
+  main > .card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
